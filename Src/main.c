@@ -65,6 +65,7 @@ int main(void)
 
   while (1)
   {
+	  // Modify the code below so it sets/resets used output pin connected to the LED
 	  if(switch_state)
 	  {
 		  GPIOB->BSRR |= GPIO_BSRR_BS_3;
