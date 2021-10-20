@@ -44,7 +44,7 @@ int main(void)
   //NVIC->IP[9] |= 2 << 4;
   //NVIC->ISER[0] |= 1 << 9;
 
-  /*set EXTI source PA3*/
+  /*set EXTI source PA4*/
   SYSCFG->EXTICR[1] &= ~(0xFU << 0U);
   //Enable interrupt from EXTI line 3
   EXTI->IMR |= EXTI_IMR_MR4;
