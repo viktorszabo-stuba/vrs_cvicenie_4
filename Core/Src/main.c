@@ -42,7 +42,7 @@ int main(void)
   NVIC_EnableIRQ(EXTI4_IRQn);
   //Set interrupt priority and enable EXTI
   //NVIC->IP[9] |= 2 << 4;
-  //NVIC->ISER[0] |= 1 << 9;
+  //NVIC->ISER[0] |= 1 << 10;
 
   /*set EXTI source PA4*/
   SYSCFG->EXTICR[1] &= ~(0xFU << 0U);
